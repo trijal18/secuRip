@@ -8,14 +8,14 @@ import time
 import pandas as pd
 import random
 
-driver_path=r"D:/projects/tp/web scrapre sele/chromedriver.exe"
-site=r"https://securit.club/join"
+driver_path=r"D:/projects/tp/web scrapre sele/chromedriver.exe" #driver path
+site=r"https://securit.club/join" #address of securit form
 
-students=pd.read_csv(r"D:\projects\secuRIP\fake_students2.csv")
+students=pd.read_csv(r"D:\projects\secuRIP\fake_students2.csv") #reading csv
 
 def send_entry(df):
     driver = webdriver.Chrome(service=Service(driver_path)) 
-    driver.get(site)
+    driver.get(site) 
     time.sleep(1)
 
     name=driver.find_element(By.XPATH,"/html/body/div[3]/div/div[1]/div/div/div/form/div[1]/input")
