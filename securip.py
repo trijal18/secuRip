@@ -3,7 +3,7 @@ import string
 import pandas as pd
 import selenium
 
-names=pd.read_csv(r"D:\projects\secuRIP\Indian-Male-Names.csv")
+names=pd.read_csv(r"D:\projects\secuRIP\Indian-Male-Names.csv") #path to dataset
 
 def get_name():
      
