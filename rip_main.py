@@ -1,3 +1,4 @@
+#sending fake/random entries
 import requests
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
