@@ -8,7 +8,7 @@ import time
 import pandas as pd
 import random
 
-driver_path=r"D:/projects/tp/web scrapre sele/chromedriver.exe" #driver path
+driver_path=r"path to driver" #driver path
 site=r"https://securit.club/join" #address of securit form
 
 students=pd.read_csv(r"D:\projects\secuRIP\fake_students2.csv") #reading csv
@@ -47,13 +47,16 @@ def send_entry(df):
     submit.click()
 
     time.sleep(5)
+ """
+ #sending entry
 try:
     send_entry(students.iloc[21])
 except:
-    print("sndj")
-    
-"""for i in range(200):
-    t=random.randint(15,90)
+    print("sndj")"""
+
+#sending multiple entries
+for i in range(300):
+    t=random.randint(15,90) #for random time delay
     print(f"Next entry in {t} mins")
     time.sleep(t*60)
     try:
@@ -64,4 +67,4 @@ except:
         print("entry failed")
 
     finally:
-        print(f"{i}/200")"""
+        print(f"{i}/300")
